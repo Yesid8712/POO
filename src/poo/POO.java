@@ -1,20 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package poo;
 
-/**
- *
- * @author YESO
- */
-public class POO {
+import models.People;
 
-    /**
-     * @param args the command line arguments
-     */
+public class POO {
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        People pedro = new People();
+        People juan = new People();
+        
+        pedro.setNombres("Pedrito");
+        pedro.setApellidos("Perez");
+        
+        juan.setNombres("Juanito");
+        
+        System.out.println(pedro.getNombres()+ " " + pedro.Speak());
+        System.out.println(juan.getNombres()+ " " + juan.walk());
+        
     }
     
 }
